@@ -437,8 +437,20 @@ footer .line-footer p a {
 
     /* cabeçalho */
     header {
-        padding: 10px 4%;
-        /* Reduzido o padding do header */
+        position: fixed; /* Fixa o header no topo */
+        top: 0; /* Alinha o header ao topo da página */
+        left: 0; /* Alinha o header à esquerda */
+        width: 100%; /* Faz o header ocupar toda a largura da página */
+        z-index: 1000; /* Garante que o header fique acima de outros elementos */
+        padding: 10px 4%; /* Ajuste o padding conforme necessário */
+    }
+
+    header img {
+        display: none;
+    }
+
+    main {
+        margin-top: 100px; /* Ajuste este valor conforme a altura do seu header */
     }
 
     .menu-desktop,
@@ -544,4 +556,29 @@ footer .line-footer p a {
         display: block;
     }
 
+}
+
+
+/* pagina obrigado */
+
+section.container {
+    padding: 80px 4%;
+}
+section.container .flex {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.container h1 {
+    color: #00ff08;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+section.container p {
+    color: #00ff08;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
