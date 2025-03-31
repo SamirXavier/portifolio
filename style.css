@@ -9,6 +9,8 @@
 body {
     background-color: #000;
     height: 100vh;
+    overflow-x: hidden;
+    /* Evita rolagem lateral */
 }
 
 .interface {
@@ -45,8 +47,6 @@ form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
-
-
 
 /*Estilo do cabeçalho  */
 header {
@@ -116,7 +116,6 @@ header nav.menu-desktop ul li {
     font-size: 30px;
 }
 
-
 .menu-mobile nav ul {
     text-align: right;
 }
@@ -143,7 +142,6 @@ header nav.menu-desktop ul li {
     left: 0;
     z-index: 8888;
     display: none;
-
 }
 
 .btn-abrir-menu {
@@ -166,7 +164,6 @@ section.topo-do-site .flex {
     color: #fff;
     font-size: 42px;
     line-height: 90px;
-
 }
 
 .topo-do-site .txt-topo-site h2 {
@@ -191,21 +188,17 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    /* Duração reduzida para 1.5s */
 }
 
 @keyframes flutuar {
     0% {
         top: 0;
         opacity: 1;
-        /* Opacidade inicial */
     }
 
     100% {
         top: 30px;
-        /* Aumentar a distância para 30px */
         opacity: 0.8;
-        /* Reduzir a opacidade ao mover */
     }
 }
 
@@ -224,13 +217,11 @@ section.especialidades .flex {
     border-radius: 20px;
     margin-top: 45px;
     transition: .2s;
-
 }
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 20px #ffffff78;
-
 }
 
 .especialidades .especialidades-box i {
@@ -335,8 +326,6 @@ section.portifolio .flex {
     opacity: 1;
 }
 
-
-
 /* ESTILO FORMULARIO */
 section.formulario {
     padding: 80px 4%;
@@ -383,7 +372,6 @@ form .btn-enviar input {
     transition: .2s;
 }
 
-
 /* ESTILO DO RODAPÉ */
 
 footer {
@@ -419,11 +407,14 @@ footer .line-footer p a {
     /* classes gerais */
     .flex {
         flex-direction: column-reverse;
+        /* Muda para coluna em telas menores */
     }
 
     h2.titulo {
         font-size: 30px;
+        /* Reduzido para 30px */
         line-height: 30px;
+        /* Ajustado para 30px */
     }
 
     p {
@@ -436,18 +427,15 @@ footer .line-footer p a {
     }
 
     /* cabeçalho */
-    header {     
-        padding: 40px 8%; /* Ajuste o padding conforme necessário */
-    }
-
-
-    main {
-        margin-top: 100px; /* Ajuste este valor conforme a altura do seu header */
+    header {
+        padding: 10px 4%;
+        /* Reduzido o padding do header */
     }
 
     .menu-desktop,
     .btn-contato {
         display: none;
+        /* Esconde o menu desktop e o botão de contato */
     }
 
     /* topo do site */
@@ -463,6 +451,7 @@ footer .line-footer p a {
 
     .topo-do-site h1 {
         font-size: 35px;
+        /* Reduzido para 35px */
         line-height: 1.2;
         /* Ajustado para reduzir o espaço entre as linhas */
         text-align: center;
@@ -472,6 +461,7 @@ footer .line-footer p a {
 
     .topo-do-site .img-topo-site {
         width: 100%;
+        /* Garante que a imagem ocupe 100% da largura */
         align-items: center;
         display: flex;
         justify-content: center;
@@ -482,6 +472,7 @@ footer .line-footer p a {
     /* ESTILO DAS ESPECIALIDADES */
     section.especialidades {
         padding: 40px 8%;
+        /* Ajustado para 8% */
     }
 
     section.especialidades .flex {
@@ -492,20 +483,24 @@ footer .line-footer p a {
     /* sobre */
     section.sobre {
         padding: 40px 8%;
+        /* Ajustado para 8% */
     }
 
     .sobre .txt-sobre h2 {
         font-size: 34px;
+        /* Reduzido para 34px */
         line-height: 40px;
         text-align: center;
     }
 
     .btn-social {
         text-align: center;
+        /* Centraliza os botões sociais */
     }
 
     .img-sobre img {
         width: 100%;
+        /* Garante que a imagem ocupe 100% da largura */
         max-width: 100%;
         /* Adicionado max-width */
         height: auto;
@@ -515,26 +510,34 @@ footer .line-footer p a {
     /* portifolio */
     section.portifolio {
         padding: 80px 8%;
+        /* Ajustado para 8% */
     }
 
     .img-port {
         width: 100%;
+        /* Garante que a imagem do portfólio ocupe 100% da largura */
         max-width: 360px;
+        /* Limita a largura máxima */
         margin: 0 auto;
+        /* Centraliza a imagem */
     }
 
     section.portifolio .flex {
         gap: 60px;
+        /* Mantido para espaçamento */
     }
 
     /* rodapé */
     footer .flex {
         flex-direction: column;
+        /* Muda para coluna em telas menores */
         gap: 30px;
+        /* Espaçamento entre os itens */
     }
 
     footer .line-footer {
         text-align: center;
+        /* Centraliza o texto no rodapé */
     }
 
     /* Botões */
@@ -546,16 +549,17 @@ footer .line-footer p a {
     /* menu mobile */
     .btn-abrir-menu {
         display: block;
+        /* Exibe o botão de abrir menu em dispositivos móveis */
     }
 
 }
-
 
 /* pagina obrigado */
 
 section.container {
     padding: 80px 4%;
 }
+
 section.container .flex {
     justify-content: center;
     align-items: center;
@@ -568,6 +572,7 @@ section.container h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 section.container p {
     color: #00ff08;
     font-size: 30px;
