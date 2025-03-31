@@ -436,13 +436,8 @@ footer .line-footer p a {
     }
 
     /* cabeçalho */
-    header {
-        position: fixed; /* Fixa o header no topo */
-        top: 0; /* Alinha o header ao topo da página */
-        left: 0; /* Alinha o header à esquerda */
-        width: 100%; /* Faz o header ocupar toda a largura da página */
-        z-index: 1000; /* Garante que o header fique acima de outros elementos */
-        padding: 10px 4%; /* Ajuste o padding conforme necessário */
+    header {     
+        padding: 40px 8%; /* Ajuste o padding conforme necessário */
     }
 
     header img {
