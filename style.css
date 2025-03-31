@@ -440,9 +440,6 @@ footer .line-footer p a {
         padding: 40px 8%; /* Ajuste o padding conforme necessário */
     }
 
-    header img {
-        display: none;
-    }
 
     main {
         margin-top: 100px; /* Ajuste este valor conforme a altura do seu header */
