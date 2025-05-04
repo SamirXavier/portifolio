@@ -304,6 +304,9 @@ section.portifolio .flex {
     background-position: 100% 100%;
 }
 
+.overlay a{
+    color: #fff;
+}
 .overlay {
     position: absolute;
     top: 0;
